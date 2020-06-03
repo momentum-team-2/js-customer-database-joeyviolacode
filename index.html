@@ -9,7 +9,7 @@
     <script src="customers.js" defer></script>
     <script src="main.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Customer Database</title>
 </head>
 <body>
     <header>
@@ -17,22 +17,21 @@
     </header>
     <div class="display-box">
     </div>
-
-    <script id="customer-template" class="customer-flex" type="text/x-lodash-template">
-        <div class="customer-pane">
-            <img src="<%= pic %>" class="pic">
-            <h2><%= name %></h2>
-            <p class="email"><%= email %></p>
-            <div class="address">
-                <p><%= address1 %></p>
-                <p><%= address2 %></p>
-            </div>
-            <div class="dates">
-                <p><%= dob %></p>
-                <p><%= since %></p>
-            </div>
-        </div>
-    </script>
-
 </body>
 </html>
+
+<script id="customer-template" class="customer-flex" type="text/x-lodash-template">
+    <div class="customer-pane">
+        <img src="<%= pic %>" class="pic">
+        <h2><%= name %></h2>
+        <p class="email"><%= email %></p>
+        <div class="address">
+            <p><%= address1 %></p>
+            <p><%= address2 %></p>
+        </div>
+        <div class="dates">
+            <p><%= dob %></p>
+            <p><%= since %></p>
+        </div>
+    </div>
+</script>

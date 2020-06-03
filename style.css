@@ -38,10 +38,6 @@ header {
     padding: 7px;
 }
 
-.email {
-    padding: 5px;
-}
-
-.dates {
+.email, .dates {
     padding: 5px;
 }
