@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script> 
+    <script src="moment.js" defer></script>
+    <script src="states.js" defer></script>
+    <script src="customers.js" defer></script>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <title>Customer Database</title>
+</head>
+<body>
+    <header>
+        <h1>Customer Database</h1>
+    </header>
+    <div class="display-box">
+    </div>
+</body>
+</html>
+
+<script id="customer-template" class="customer-flex" type="text/x-lodash-template">
+    <div class="customer-pane">
+        <img src="<%= pic %>" class="pic">
+        <h2><%= name %></h2>
+        <p class="email"><%= email %></p>
+        <div class="address">
+            <p><%= address1 %></p>
+            <p><%= address2 %></p>
+        </div>
+        <div class="dates">
+            <p><%= dob %></p>
+            <p><%= since %></p>
+        </div>
+    </div>
+</script>
